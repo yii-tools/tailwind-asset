@@ -2,22 +2,22 @@
     <a href="https://github.com/yii-extension" target="_blank">
         <img src="https://lh3.googleusercontent.com/ehSTPnXqrkk0M3U-UPCjC0fty9K6lgykK2WOUA2nUHp8gIkRjeTN8z8SABlkvcvR-9PIrboxIvPGujPgWebLQeHHgX7yLUoxFSduiZrTog6WoZLiAvqcTR1QTPVRmns2tYjACpp7EQ=w2400" height="100px">
     </a>
-    <h1 align="center">Template for Yii Packages</h1>
+    <h1 align="center">Tailwind Asset for Yii3.</h1>
     <br>
 </p>
 
-[![Total Downloads](https://poser.pugx.org/yii-extension/template/downloads.png)](https://packagist.org/packages/yii-extension/template)
-[![Build Status](https://github.com/yii-extension/template/workflows/build/badge.svg)](https://github.com/yii-extension/template/actions?query=workflow%3Abuild)
-[![codecov](https://codecov.io/gh/yii-extension/template/branch/main/graph/badge.svg?token=KB6T5KMGED)](https://codecov.io/gh/yii-extension/template)
-[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https://badge-api.stryker-mutator.io/github.com/yii-extension/template/master)](https://dashboard.stryker-mutator.io/reports/github.com/yii-extension/template/master)
-[![static analysis](https://github.com/yii-extension/template/workflows/static%20analysis/badge.svg)](https://github.com/yii-extension/template/actions?query=workflow%3A%22static+analysis%22)
-[![type-coverage](https://shepherd.dev/github/yii-extension/template/coverage.svg)](https://shepherd.dev/github/yii-extension/template)
+[![Total Downloads](https://poser.pugx.org/yii-extension/asset-tailwind/downloads.png)](https://packagist.org/packages/yii-extension/asset-tailwind)
+[![Build Status](https://github.com/yii-extension/asset-tailwind/workflows/build/badge.svg)](https://github.com/yii-extension/asset-tailwind/actions?query=workflow%3Abuild)
+[![codecov](https://codecov.io/gh/yii-extension/asset-tailwind/branch/main/graph/badge.svg?token=KB6T5KMGED)](https://codecov.io/gh/yii-extension/asset-tailwind)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https://badge-api.stryker-mutator.io/github.com/yii-extension/asset-tailwind/master)](https://dashboard.stryker-mutator.io/reports/github.com/yii-extension/asset-tailwind/master)
+[![static analysis](https://github.com/yii-extension/asset-tailwind/workflows/static%20analysis/badge.svg)](https://github.com/yii-extension/asset-tailwind/actions?query=workflow%3A%22static+analysis%22)
+[![type-coverage](https://shepherd.dev/github/yii-extension/asset-tailwind/coverage.svg)](https://shepherd.dev/github/yii-extension/asset-tailwind)
 
 
 ## Installation
 
 ```shell
-composer require <vendor/your-packages>
+composer require yii-extension/asset-tailwind
 ```
 
 ## Unit testing
@@ -50,7 +50,7 @@ The code is statically analyzed with [Psalm](https://psalm.dev/docs). To run sta
 
 ## License
 
-The Template for Yii Packages is free software. It is released under the terms of the BSD License.
+The asset-tailwind for Yii Packages is free software. It is released under the terms of the BSD License.
 Please see [`LICENSE`](./LICENSE.md) for more information.
 
 Maintained by [Yii Extension](https://github.com/yii-extension).
