@@ -1,9 +1,9 @@
 {
     "name": "yii-extension/asset-tailwind",
     "type": "library",
-    "description": "Tailwind Asset for Yii3",
+    "description": "Tailwind Asset for Yii.",
     "keywords": [
-        "yii3",
+        "yii",
         "tailwind",
         "asset"
     ],
@@ -36,6 +36,9 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
+        },
+        "config-plugin": {
+            "params": "config/params.php"
         }
     },
     "config": {
