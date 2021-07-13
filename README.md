@@ -2,7 +2,7 @@
     <a href="https://github.com/yii-extension" target="_blank">
         <img src="https://lh3.googleusercontent.com/ehSTPnXqrkk0M3U-UPCjC0fty9K6lgykK2WOUA2nUHp8gIkRjeTN8z8SABlkvcvR-9PIrboxIvPGujPgWebLQeHHgX7yLUoxFSduiZrTog6WoZLiAvqcTR1QTPVRmns2tYjACpp7EQ=w2400" height="100px">
     </a>
-    <h1 align="center">Tailwind Asset for Yii3.</h1>
+    <h1 align="center">Tailwind Asset for Yii.</h1>
     <br>
 </p>
 
@@ -49,7 +49,7 @@ The code is statically analyzed with [Psalm](https://psalm.dev/docs). To run sta
 
 ## License
 
-The asset-tailwind for Yii Packages is free software. It is released under the terms of the BSD License.
+The `yii-extension/asset-tailwind` for Yii Packages is free software. It is released under the terms of the BSD License.
 Please see [`LICENSE`](./LICENSE.md) for more information.
 
 Maintained by [Yii Extension](https://github.com/yii-extension).
