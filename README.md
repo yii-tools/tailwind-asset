@@ -19,6 +19,67 @@
 composer require yii-extension/asset-tailwind
 ```
 
+## Using assets
+
+Tailwind is a CSS framework that provides all the CSS to customize your application, the widgets by default
+do not register any Asset so you must register them in your application to be used, since you can simply use the
+default CSS file layout, or build your own custom CCS.
+
+Three Assets are provided:
+
+- [Tailwind](https://tailwindcss.com/docs/installation): CSS file tailwind css framework without JS code.
+
+To use widgets only, register `TailwindAsset::class`, which we can do in several ways explained below.
+
+### Register asset in view layout or individual view
+
+By registering the Asset in the `layout/main.php` it will be available for all views.
+If you need it registered for individual view (such as `views/site/contact.php`) only,
+register it in that view.
+
+
+```php
+use  Yii\Extension\Asset\Tailwind\TailwindAsset;
+
+/**
+ * @var Yiisoft\Assets\AssetManager $assetManager
+ * @var Yiisoft\View\WebView $this
+ */
+
+$assetManager->register([
+    TailwindAsset::class,
+]);
+
+$this->setCssFiles($assetManager->getCssFiles());
+$this->setJsFiles($assetManager->getJsFiles());
+```
+
+### Register asset in application params
+
+You can register asset in the assets parameters, (by default, this is `config/packages/yiisoft/assets/params.php`).
+Asset will be available for all views of this application.
+
+```php
+use  Yii\Extension\Asset\Tailwind\TailwindAsset;
+
+'yiisoft/asset' => [
+    'assetManager' => [
+        'register' => [
+            TailwindAsset::class,
+        ],
+    ],
+],
+```
+
+Then in `resources/layout/main.php`:
+
+```php
+/* @var Yiisoft\View\WebView $this */
+
+$this->setCssFiles($assetManager->getCssFiles());
+$this->setJsFiles($assetManager->getJsFiles());
+```
+
 ## Unit testing
 
 The package is tested with [PHPUnit](https://phpunit.de/). To run tests:
