@@ -34,7 +34,8 @@ To use widgets only, register `TailwindAsset::class`, which we can do in several
 ### Register asset in view layout or individual view
 
 By registering the Asset in the `layout/main.php` it will be available for all views.
-If you need it registered for individual view (such as `views/site/contact.php`) only,
+
+If you need it registered for individual view (such as `views/user/login.php`) only,
 register it in that view.
 
 
@@ -71,7 +72,7 @@ use  Yii\Extension\Asset\Tailwind\TailwindAsset;
 ],
 ```
 
-Then in `resources/layout/main.php`:
+Then in `layout/main.php`:
 
 ```php
 /* @var Yiisoft\View\WebView $this */
