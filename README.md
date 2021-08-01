@@ -28,9 +28,9 @@ default CSS file layout, or build your own custom CCS.
 Three Assets are provided:
 
 - [TailwindAsset](https://tailwindcss.com/docs/installation): CSS file tailwind css framework without JS code.
-- [TailwindDarkAsset](src\TailwindDarkAsset.php): CSS file tailwind theme dark without JS code.
-- [MinifiedTailwindAsset](src\MinifiedTailwindAsset.php): Minified CSS file tailwind css framework with JS code.
-- [MinifiedTailDarkAsset](src\MinifiedTailwindAsset.php): Minified CSS file tailwind theme dark without JS code.
+- [TailwindDarkAsset](src/TailwindDarkAsset.php): CSS file tailwind theme dark without JS code.
+- [MinifiedTailwindAsset](src/MinifiedTailwindAsset.php): Minified CSS file tailwind css framework with JS code.
+- [MinifiedTailDarkAsset](src/MinifiedTailwindAsset.php): Minified CSS file tailwind theme dark without JS code.
 
 To use widgets only, register `TailwindAsset::class`, which we can do in several ways explained below.
 
