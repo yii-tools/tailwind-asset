@@ -29,19 +29,7 @@ final class AssetTest extends TestCase
             [
                 'Css',
                 \Yii\Extension\Asset\Tailwind\TailwindDarkAsset::class,
-            ],
-            [
-                'Css',
-                \Yii\Extension\Asset\Tailwind\TailwindStarterKitAsset::class,
-            ],
-            [
-                'Js',
-                \Yii\Extension\Asset\Tailwind\PopperAsset::class,
-            ],
-            [
-                'Js',
-                \Yii\Extension\Asset\Tailwind\TailwindStarterKitAsset::class,
-            ],
+            ]
         ];
     }
 
