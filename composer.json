@@ -1,11 +1,11 @@
 {
     "name": "yii-extension/asset-tailwind",
     "type": "library",
-    "description": "Tailwind Asset for Yii.",
+    "description": "Tailwind Asset For Yii3.",
     "keywords": [
-        "yii",
-        "tailwind",
-        "asset"
+        "yii3",
+        "asset",
+        "tailwind"
     ],
     "license": "BSD-3-Clause",
     "minimum-stability": "dev",
