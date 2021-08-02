@@ -25,18 +25,20 @@ Tailwind is a CSS framework that provides all the CSS to customize your applicat
 do not register any Asset so you must register them in your application to be used, since you can simply use the
 default CSS file layout, or build your own custom CCS.
 
-Three Assets are provided:
+`Three Assets are provided:`
 
-- [TailwindAsset](https://tailwindcss.com/docs/installation): CSS file tailwind css framework without JS code.
-- [TailwindDarkAsset](src/TailwindDarkAsset.php): CSS file tailwind theme dark without JS code.
-- [MinifiedTailwindAsset](src/MinifiedTailwindAsset.php): Minified CSS file tailwind css framework with JS code.
-- [MinifiedTailDarkAsset](src/MinifiedTailwindAsset.php): Minified CSS file tailwind theme dark without JS code.
+- [TailwindAsset](src/TailwindAsset.php): Asset file for Tailwind Css Framework include `Css` files.
+- [TailwindDarkAsset](src/TailwindDarkAsset.php): Asset file for Tailwind Dark Theme Css Framework include `Css` files.
+- [MinifiedTailwindAsset](src/MinifiedTailwindAsset.php): Asset file for Minified Tailwind Css Framework include `Css` files.
+- [MinifiedTailDarkAsset](src/MinifiedTailwindAsset.php): Asset file for Minified Tailwind Dark Theme Css Framework include `Css` files.
+
+For more information [Tailwind](https://tailwindcss.com/docs/installation).
 
 To use widgets only, register `TailwindAsset::class`, which we can do in several ways explained below.
 
 `Note:` You need to have [npm](https://docs.npmjs.com/getting-started) installed, this extension uses [foxy](https://github.com/fxpio/foxy) to install assets. 
 
-### Register asset in view layout or individual view
+`Register asset in view layout or individual view:`
 
 By registering the Asset in the `layout/main.php` it will be available for all views.
 
