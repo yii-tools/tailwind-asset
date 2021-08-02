@@ -10,8 +10,6 @@
 [![Build Status](https://github.com/yii-extension/asset-tailwind/workflows/build/badge.svg)](https://github.com/yii-extension/asset-tailwind/actions?query=workflow%3Abuild)
 [![codecov](https://codecov.io/gh/yii-extension/asset-tailwind/branch/master/graph/badge.svg?token=Itn8wKEirt)](https://codecov.io/gh/yii-extension/asset-tailwind)
 [![static analysis](https://github.com/yii-extension/asset-tailwind/workflows/static%20analysis/badge.svg)](https://github.com/yii-extension/asset-tailwind/actions?query=workflow%3A%22static+analysis%22)
-[![type-coverage](https://shepherd.dev/github/yii-extension/asset-tailwind/coverage.svg)](https://shepherd.dev/github/yii-extension/asset-tailwind)
-
 
 ## Installation
 
@@ -47,7 +45,7 @@ register it in that view.
 
 
 ```php
-use  Yii\Extension\Asset\Tailwind\TailwindAsset;
+use Yii\Extension\Asset\Tailwind\TailwindAsset;
 
 /**
  * @var Yiisoft\Assets\AssetManager $assetManager
@@ -68,7 +66,7 @@ You can register asset in the assets parameters, (by default, this is `config/pa
 Asset will be available for all views of this application.
 
 ```php
-use  Yii\Extension\Asset\Tailwind\TailwindAsset;
+use Yii\Extension\Asset\Tailwind\TailwindAsset;
 
 'yiisoft/asset' => [
     'assetManager' => [
