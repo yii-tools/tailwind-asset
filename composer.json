@@ -13,13 +13,13 @@
     "require": {
         "php": "^7.4|^8.0",
         "foxy/foxy": "^1.1@dev",
-        "yiisoft/assets": "^1.0.0",
-        "yiisoft/files": "^1.0.0"
+        "yiisoft/assets": "^1.0",
+        "yiisoft/files": "^1.0"
     },
     "require-dev": {
         "psr/log": "^1.1",
         "phpunit/phpunit": "^9.5",
-        "vimeo/psalm": "^4.4",
+        "vimeo/psalm": "^4.10",
         "yiisoft/aliases": "^2.0.0",
         "yiisoft/test-support": "^1.0@dev"
     },
@@ -36,9 +36,6 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
-        },
-        "config-plugin": {
-            "params": "config/params.php"
         }
     },
     "config": {
