@@ -52,36 +52,7 @@ use Yii\Extension\Asset\Tailwind\TailwindAsset;
  * @var Yiisoft\View\WebView $this
  */
 
-$assetManager->register([
-    TailwindAsset::class,
-]);
-
-$this->setCssFiles($assetManager->getCssFiles());
-$this->setJsFiles($assetManager->getJsFiles());
-```
-
-### Register asset in application params
-
-You can register asset in the assets parameters, (by default, this is `config/packages/yiisoft/assets/params.php`).
-Asset will be available for all views of this application.
-
-```php
-use Yii\Extension\Asset\Tailwind\TailwindAsset;
-
-'yiisoft/asset' => [
-    'assetManager' => [
-        'register' => [
-            TailwindAsset::class,
-        ],
-    ],
-],
-```
-
-Then in `layout/main.php`:
-
-```php
-/* @var Yiisoft\View\WebView $this */
-
+$assetManager->register(TailwindAsset::class);
 $this->setCssFiles($assetManager->getCssFiles());
 $this->setJsFiles($assetManager->getJsFiles());
 ```
