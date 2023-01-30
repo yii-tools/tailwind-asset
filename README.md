@@ -1,90 +1,79 @@
 <p align="center">
-    <a href="https://github.com/yii-extension" target="_blank">
-        <img src="https://lh3.googleusercontent.com/ehSTPnXqrkk0M3U-UPCjC0fty9K6lgykK2WOUA2nUHp8gIkRjeTN8z8SABlkvcvR-9PIrboxIvPGujPgWebLQeHHgX7yLUoxFSduiZrTog6WoZLiAvqcTR1QTPVRmns2tYjACpp7EQ=w2400" height="100px">
+    <a href="https://github.com/yii-tools/tailwind-asset" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/121752654?s=200&v=4" height="100px">
     </a>
-    <h1 align="center">Tailwind Asset For Yii3.</h1>
+    <a href="https://tailwindcss.com/" target="_blank">
+        <img src="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-dark.svg" height="100px" width="400px">
+    </a>    
+    <h1 align="center">Asset for Tailwind for YiiFramework v.3.0.</h1>
     <br>
 </p>
 
-[![Total Downloads](https://poser.pugx.org/yii-extension/asset-tailwind/downloads.png)](https://packagist.org/packages/yii-extension/asset-tailwind)
-[![Build Status](https://github.com/yii-extension/asset-tailwind/workflows/build/badge.svg)](https://github.com/yii-extension/asset-tailwind/actions?query=workflow%3Abuild)
-[![codecov](https://codecov.io/gh/yii-extension/asset-tailwind/branch/master/graph/badge.svg?token=Itn8wKEirt)](https://codecov.io/gh/yii-extension/asset-tailwind)
-[![static analysis](https://github.com/yii-extension/asset-tailwind/workflows/static%20analysis/badge.svg)](https://github.com/yii-extension/asset-tailwind/actions?query=workflow%3A%22static+analysis%22)
+## Requirements
 
-## Installation
+The minimun version of PHP required by this package is PHP 8.1.
 
-```shell
-composer require yii-extension/asset-tailwind
-```
+For install this package, you need [composer](https://getcomposer.org/) and [npm](https://www.npmjs.com/).
 
-## Using assets
+## Install
 
-Tailwind is a CSS framework that provides all the CSS to customize your application, the widgets by default
-do not register any Asset so you must register them in your application to be used, since you can simply use the
-default CSS file layout, or build your own custom CCS.
-
-`Three Assets are provided:`
-
-- [TailwindAsset](src/TailwindAsset.php): Asset file for Tailwind Css Framework include `Css` files.
-- [TailwindDarkAsset](src/TailwindDarkAsset.php): Asset file for Tailwind Dark Theme Css Framework include `Css` files.
-- [MinifiedTailwindAsset](src/MinifiedTailwindAsset.php): Asset file for Minified Tailwind Css Framework include `Css` files.
-- [MinifiedTailDarkAsset](src/MinifiedTailwindAsset.php): Asset file for Minified Tailwind Dark Theme Css Framework include `Css` files.
-
-For more information [Tailwind](https://tailwindcss.com/docs/installation).
-
-To use widgets only, register `TailwindAsset::class`, which we can do in several ways explained below.
-
-`Note:` You need to have [npm](https://docs.npmjs.com/getting-started) installed, this extension uses [foxy](https://github.com/fxpio/foxy) to install assets. 
-
-`Register asset in view layout or individual view:`
-
-By registering the Asset in the `layout/main.php` it will be available for all views.
-
-If you need it registered for individual view (such as `views/user/login.php`) only,
-register it in that view.
-
-
-```php
-use Yii\Extension\Asset\Tailwind\TailwindAsset;
-
-/**
- * @var Yiisoft\Assets\AssetManager $assetManager
- * @var Yiisoft\View\WebView $this
- */
-
-$assetManager->register(TailwindAsset::class);
-$this->setCssFiles($assetManager->getCssFiles());
-$this->setJsFiles($assetManager->getJsFiles());
-```
-
-## Unit testing
-
-The package is tested with [PHPUnit](https://phpunit.de/). To run tests:
+Preferably install with composer:
 
 ```shell
-./vendor/bin/phpunit
+composer require yii-tools/tailwind-asset
+```
+
+## Usage
+
+For use this package, read the [docs](/docs/install.md).
+
+## Checking dependencies
+
+This package uses [composer-require-checker](https://github.com/maglnet/ComposerRequireChecker) to check if all dependencies are correctly defined in `composer.json`.
+
+To run the checker, execute the following command:
+
+```shell
+composer run check-dependencies
+```
+
+## Mutation testing
+
+Mutation testing is checked with [Infection](https://infection.github.io/). To run it:
+
+```shell
+composer run mutation
 ```
 
 ## Static analysis
 
-The code is statically analyzed with [Psalm](https://psalm.dev/docs). To run static analysis:
+The code is statically analyzed with [Psalm](https://psalm.dev/). To run static analysis:
 
 ```shell
-./vendor/bin/psalm
+composer run psalm
 ```
+
+## Testing
+
+The code is tested with [PHPUnit](https://phpunit.de/). To run tests:
+
+```
+composer run test
+```
+
+## CI status
+
+[![build](https://github.com/yii-tools/tailwind-asset/actions/workflows/build.yml/badge.svg)](https://github.com/yii-tools/tailwind-asset/actions/workflows/build.yml)
+[![codecov](https://codecov.io/gh/yii-tools/tailwind-asset/branch/main/graph/badge.svg?token=MF0XUGVLYC)](https://codecov.io/gh/yii-tools/tailwind-asset)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyii-tools%2Ftailwind-asset%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/yii-tools/tailwind-asset/main)
+[![static analysis](https://github.com/yii-tools/tailwind-asset/actions/workflows/static.yml/badge.svg)](https://github.com/yii-tools/tailwind-asset/actions/workflows/static.yml)
+[![type-coverage](https://shepherd.dev/github/yii-tools/tailwind-asset/coverage.svg)](https://shepherd.dev/github/yii-tools/tailwind-asset)
+[![StyleCI](https://github.styleci.io/repos/385280477/shield?branch=main)](https://github.styleci.io/repos/385280477?branch=main)
 
 ## License
 
-The `yii-extension/asset-tailwind` for Yii Packages is free software.
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-It is released under the terms of the BSD License. Please see [`LICENSE`](./LICENSE.md) for more information.
+## Our social networks
 
-Maintained by [Yii Extension](https://github.com/yii-extension).
-
-## Support the project
-
-[![Open Collective](https://img.shields.io/badge/Open%20Collective-sponsor-7eadf1?logo=open%20collective&logoColor=7eadf1&labelColor=555555)](https://opencollective.com/yiisoft)
-
-## Powered by Yii Framework
-
-[![Official website](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](https://www.yiiframework.com/)
+[![Twitter](https://img.shields.io/badge/twitter-follow-1DA1F2?logo=twitter&logoColor=1DA1F2&labelColor=555555?style=flat)](https://twitter.com/Terabytesoftw)
