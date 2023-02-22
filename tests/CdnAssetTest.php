@@ -16,7 +16,7 @@ final class CdnAssetTest extends TestCase
     use TestTrait;
 
     /**
-     * @dataProvider \Yii\Tailwind\Asset\Tests\Provider\CdnAssetProvider::assetBundles()
+     * @dataProvider \Yii\Tailwind\Asset\Tests\Provider\CdnAssetProvider::assetBundles
      *
      * @psalm-suppress InvalidStringClass
      * @psalm-suppress MixedArrayOffset
