@@ -55,3 +55,6 @@ return [
 ## Using npm packages
 
 [npm](https://www.npmjs.com/) packages are installed via [fxpio/foxy](https://github.com/fxpio/foxy) and are available in the `node_modules` directory. 
+
+**Note:** *This package generates all the CSS for [Tailwind CSS](https://tailwindcss.com/) and its plugins. It does not include any JavaScript. If you only need to generate the classes of your project, check the documentation of [Tailwind CSS](https://tailwindcss.com/docs/installation/).*
+

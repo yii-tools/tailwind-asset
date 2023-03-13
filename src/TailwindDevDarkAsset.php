@@ -11,17 +11,13 @@ final class TailwindDevDarkAsset extends AssetBundle
 {
     public string|null $basePath = '@assets';
     public string|null $baseUrl = '@assetsUrl';
-    public string|null $sourcePath = '@npm/tailwindcss';
-    public array $css = ['dist/tailwind-dark.css'];
+    public string|null $sourcePath = '@tailwind-asset';
+    public array $css = ['tailwind-dark.css'];
 
     public function __construct()
     {
         $pathMatcher = new PathMatcher();
 
-        $this->publishOptions = [
-            'filter' => $pathMatcher->only(
-                '**dist/tailwind-dark.css',
-            ),
-        ];
+        $this->publishOptions = ['filter' => $pathMatcher->only('**tailwind-dark.css')];
     }
 }
