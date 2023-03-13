@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Yii\Tailwind\Asset\Tests\Provider;
 
-use Yii\Tailwind\Asset\Npm;
+use Yii\Tailwind\Asset;
 
 final class NpmAssetProvider
 {
@@ -16,27 +16,27 @@ final class NpmAssetProvider
         return [
             [
                 'Css',
-                Npm\Dev\TailwindAsset::class,
+                Asset\TailwindDevAsset::class,
             ],
             [
                 'Css',
-                Npm\Dev\TailwindDarkAsset::class,
+                Asset\TailwindDevDarkAsset::class,
             ],
             [
                 'Css',
-                Npm\Dev\TailwindExperimentalAsset::class,
+                Asset\TailwindDevExperimentalAsset::class,
             ],
             [
                 'Css',
-                Npm\Min\TailwindAsset::class,
+                Asset\TailwindMinAsset::class,
             ],
             [
                 'Css',
-                Npm\Min\TailwindDarkAsset::class,
+                Asset\TailwindMinDarkAsset::class,
             ],
             [
                 'Css',
-                Npm\Min\TailwindExperimentalAsset::class,
+                Asset\TailwindMinExperimentalAsset::class,
             ],
         ];
     }

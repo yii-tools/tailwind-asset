@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Yii\Tailwind\Asset\Npm\Min;
+namespace Yii\Tailwind\Asset;
 
 use Yiisoft\Assets\AssetBundle;
 use Yiisoft\Files\PathMatcher\PathMatcher;
 
-final class TailwindDarkAsset extends AssetBundle
+final class TailwindMinDarkAsset extends AssetBundle
 {
     public string|null $basePath = '@assets';
     public string|null $baseUrl = '@assetsUrl';
@@ -19,9 +19,7 @@ final class TailwindDarkAsset extends AssetBundle
         $pathMatcher = new PathMatcher();
 
         $this->publishOptions = [
-            'filter' => $pathMatcher->only(
-                '**dist/tailwind-dark.min.css',
-            ),
+            'filter' => $pathMatcher->only('**dist/tailwind-dark.min.css'),
         ];
     }
 }

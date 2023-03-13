@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Yii\Tailwind\Asset\Npm\Dev;
+namespace Yii\Tailwind\Asset;
 
 use Yiisoft\Assets\AssetBundle;
 use Yiisoft\Files\PathMatcher\PathMatcher;
 
-final class TailwindAsset extends AssetBundle
+final class TailwindDevExperimentalAsset extends AssetBundle
 {
     public string|null $basePath = '@assets';
     public string|null $baseUrl = '@assetsUrl';
     public string|null $sourcePath = '@npm/tailwindcss';
-    public array $css = ['dist/tailwind.css'];
+    public array $css = ['dist/tailwind-experimental.css'];
 
     public function __construct()
     {
@@ -20,7 +20,7 @@ final class TailwindAsset extends AssetBundle
 
         $this->publishOptions = [
             'filter' => $pathMatcher->only(
-                '**dist/tailwind.css',
+                '**dist/tailwind-experimental.css',
             ),
         ];
     }

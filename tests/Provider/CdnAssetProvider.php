@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Yii\Tailwind\Asset\Tests\Provider;
 
-use Yii\Tailwind\Asset\Cdn\TailwindAsset;
+use Yii\Tailwind\Asset\TailwindCdnAsset;
 
 final class CdnAssetProvider
 {
@@ -16,7 +16,7 @@ final class CdnAssetProvider
         return [
             [
                 'Css',
-                TailwindAsset::class,
+                TailwindCdnAsset::class,
             ],
         ];
     }
