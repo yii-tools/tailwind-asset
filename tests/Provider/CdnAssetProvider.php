@@ -14,10 +14,7 @@ final class CdnAssetProvider
     public static function assetBundles(): array
     {
         return [
-            [
-                'Css',
-                TailwindCdnAsset::class,
-            ],
+            ['Css', TailwindCdnAsset::class],
         ];
     }
 }

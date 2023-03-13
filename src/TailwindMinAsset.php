@@ -11,15 +11,13 @@ final class TailwindMinAsset extends AssetBundle
 {
     public string|null $basePath = '@assets';
     public string|null $baseUrl = '@assetsUrl';
-    public string|null $sourcePath = '@npm/tailwindcss';
-    public array $css = ['dist/tailwind.min.css'];
+    public string|null $sourcePath = '@tailwind-asset';
+    public array $css = ['tailwind.min.css'];
 
     public function __construct()
     {
         $pathMatcher = new PathMatcher();
 
-        $this->publishOptions = [
-            'filter' => $pathMatcher->only('**dist/tailwind.min.css'),
-        ];
+        $this->publishOptions = ['filter' => $pathMatcher->only('**/tailwind.min.css')];
     }
 }

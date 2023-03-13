@@ -14,30 +14,10 @@ final class NpmAssetProvider
     public static function assetBundles(): array
     {
         return [
-            [
-                'Css',
-                Asset\TailwindDevAsset::class,
-            ],
-            [
-                'Css',
-                Asset\TailwindDevDarkAsset::class,
-            ],
-            [
-                'Css',
-                Asset\TailwindDevExperimentalAsset::class,
-            ],
-            [
-                'Css',
-                Asset\TailwindMinAsset::class,
-            ],
-            [
-                'Css',
-                Asset\TailwindMinDarkAsset::class,
-            ],
-            [
-                'Css',
-                Asset\TailwindMinExperimentalAsset::class,
-            ],
+            ['Css', Asset\TailwindDevAsset::class],
+            ['Css', Asset\TailwindDevDarkAsset::class],
+            ['Css', Asset\TailwindMinAsset::class],
+            ['Css', Asset\TailwindMinDarkAsset::class],
         ];
     }
 }

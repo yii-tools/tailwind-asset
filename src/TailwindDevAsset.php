@@ -11,15 +11,13 @@ final class TailwindDevAsset extends AssetBundle
 {
     public string|null $basePath = '@assets';
     public string|null $baseUrl = '@assetsUrl';
-    public string|null $sourcePath = '@npm/tailwindcss';
-    public array $css = ['dist/tailwind.css'];
+    public string|null $sourcePath = '@tailwind-asset';
+    public array $css = ['tailwind.css'];
 
     public function __construct()
     {
         $pathMatcher = new PathMatcher();
 
-        $this->publishOptions = [
-            'filter' => $pathMatcher->only('**dist/tailwind.css'),
-        ];
+        $this->publishOptions = ['filter' => $pathMatcher->only('**/tailwind.css')];
     }
 }
