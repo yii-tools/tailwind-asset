@@ -13,14 +13,14 @@ file: ./resources/views/layout/main.php
 
 declare(strict_types=1);
 
-use Yii\Tailwind\Asset\Npm\Dev\TailwindAsset;
+use Yii\Tailwind\Asset\TailwindDevAsset;
 
 /**
  * @var \Yiisoft\Assets\AssetManager $assetManager
  */
 
 // Register the asset bundle with a asset manager component.
-$assetManager->register(TailwindAsset::class);
+$assetManager->register(TailwindDevAsset::class);
 
 // Set parameters for the registered asset bundle a view component.
 $this->addCssFiles($assetManager->getCssFiles());
@@ -39,13 +39,13 @@ file: ./config/params.php
 
 declare(strict_types=1);
 
-use Yii\Tailwind\Asset\Cdn\TailwindAsset;
+use Yii\Tailwind\Asset\TailwindCdnAsset;
 
 return [
     'yiisoft/assets' => [
         'assetManager' => [
             'register' => [
-                TailwindAsset::class,
+                TailwindCdnAsset::class,
             ],
         ],
     ],
