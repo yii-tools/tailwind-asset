@@ -6,12 +6,12 @@ namespace Yii\Tailwind\Asset\Tests\Support;
 
 use Exception;
 use Psr\Log\NullLogger;
+use Yii\Support\Assert;
 use Yiisoft\Aliases\Aliases;
 use Yiisoft\Assets\AssetConverter;
 use Yiisoft\Assets\AssetLoader;
 use Yiisoft\Assets\AssetManager;
 use Yiisoft\Assets\AssetPublisher;
-use Yii\Support\Assert;
 
 trait TestTrait
 {
