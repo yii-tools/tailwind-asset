@@ -27,7 +27,6 @@ trait TestTrait
                 '@npm' => '@root/node_modules',
                 '@assetsUrl' => '/',
                 '@assets' => __DIR__ . '/runtime',
-                '@tailwind-asset' => '@root/resources/css',
             ]
         );
         $this->assetManager = $this->createAssetManager($this->aliases);

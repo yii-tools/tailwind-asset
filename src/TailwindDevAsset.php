@@ -11,7 +11,7 @@ final class TailwindDevAsset extends AssetBundle
 {
     public string|null $basePath = '@assets';
     public string|null $baseUrl = '@assetsUrl';
-    public string|null $sourcePath = '@tailwind-asset';
+    public string|null $sourcePath = __DIR__ . '/css';
     public array $css = ['tailwind.css'];
 
     public function __construct()

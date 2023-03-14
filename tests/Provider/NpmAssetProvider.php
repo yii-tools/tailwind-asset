@@ -15,9 +15,9 @@ final class NpmAssetProvider
     {
         return [
             ['Css', Asset\TailwindDevAsset::class],
-            ['Css', Asset\TailwindDevDarkAsset::class],
-            ['Css', Asset\TailwindMinAsset::class],
-            ['Css', Asset\TailwindMinDarkAsset::class],
+            ['Css', Asset\TailwindDarkDevAsset::class],
+            ['Css', Asset\TailwindProdAsset::class],
+            ['Css', Asset\TailwindDarkProdAsset::class],
         ];
     }
 }
