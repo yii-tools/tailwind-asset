@@ -27,39 +27,11 @@ composer require yii-tools/tailwind-asset
 
 [Check the documentation docs](/docs/install.md) to learn about usage.
 
-## Checking dependencies
-
-This package uses [composer-require-checker](https://github.com/maglnet/ComposerRequireChecker) to check if all dependencies are correctly defined in `composer.json`.
-
-To run the checker, execute the following command:
-
-```shell
-composer run check-dependencies
-```
-
-## Mutation testing
-
-Mutation testing is checked with [Infection](https://infection.github.io/). To run it:
-
-```shell
-composer run mutation
-```
-
-## Static analysis
-
-The code is statically analyzed with [Psalm](https://psalm.dev/). To run static analysis:
-
-```shell
-composer run psalm
-```
-
 ## Testing
 
-The code is tested with [PHPUnit](https://phpunit.de/). To run tests:
+[Check the documentation testing](/docs/testing.md) to learn about testing. 
 
-```
-composer run test
-```
+```shell
 
 ## CI status
 
