@@ -25,7 +25,7 @@ composer require yii-tools/tailwind-asset
 
 ## Usage
 
-For use this package, read the [docs](/docs/install.md).
+[Check the documentation docs](/docs/install.md) to learn about usage.
 
 ## Checking dependencies
 
