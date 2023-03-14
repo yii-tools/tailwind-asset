@@ -31,8 +31,6 @@ composer require yii-tools/tailwind-asset
 
 [Check the documentation testing](/docs/testing.md) to learn about testing. 
 
-```shell
-
 ## CI status
 
 [![build](https://github.com/yii-tools/tailwind-asset/actions/workflows/build.yml/badge.svg)](https://github.com/yii-tools/tailwind-asset/actions/workflows/build.yml)
