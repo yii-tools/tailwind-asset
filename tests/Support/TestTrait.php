@@ -26,7 +26,7 @@ trait TestTrait
                 '@root' => dirname(__DIR__, 2),
                 '@npm' => '@root/node_modules',
                 '@assetsUrl' => '/',
-                '@assets' => __DIR__ . '/runtime'
+                '@assets' => __DIR__ . '/runtime',
             ]
         );
         $this->assetManager = $this->createAssetManager($this->aliases);
