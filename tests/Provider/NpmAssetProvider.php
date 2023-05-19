@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Yii\Tailwind\Asset\Tests\Provider;
+namespace Yii\Assets\Tests\Provider;
 
-use Yii\Tailwind\Asset;
+use Yii\Assets;
 
 final class NpmAssetProvider
 {
@@ -14,10 +14,8 @@ final class NpmAssetProvider
     public static function assetBundles(): array
     {
         return [
-            ['Css', Asset\TailwindDevAsset::class],
-            ['Css', Asset\TailwindDarkDevAsset::class],
-            ['Css', Asset\TailwindProdAsset::class],
-            ['Css', Asset\TailwindDarkProdAsset::class],
+            ['Css', Assets\TailwindDev::class],
+            ['Css', Assets\TailwindProd::class],
         ];
     }
 }
