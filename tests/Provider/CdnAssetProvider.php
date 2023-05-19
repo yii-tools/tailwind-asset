@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Yii\Tailwind\Asset\Tests\Provider;
+namespace Yii\Assets\Tests\Provider;
 
-use Yii\Tailwind\Asset\TailwindCdnAsset;
+use Yii\Assets\TailwindCdn;
 
 final class CdnAssetProvider
 {
@@ -14,7 +14,7 @@ final class CdnAssetProvider
     public static function assetBundles(): array
     {
         return [
-            ['Css', TailwindCdnAsset::class],
+            ['Css', TailwindCdn::class],
         ];
     }
 }
